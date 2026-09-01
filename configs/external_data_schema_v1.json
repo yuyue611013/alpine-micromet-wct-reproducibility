@@ -1,0 +1,24 @@
+{
+  "schema_version": "wce_external_permission_controlled_interface_v1",
+  "design_label": "CALENDAR_ALIGNED_CROSS_YEAR_OPERATIONAL_STRESS_TEST",
+  "same_year_validation": false,
+  "public_repository_contains_real_rows": false,
+  "public_repository_contains_locations": false,
+  "permission_required": true,
+  "synthetic_input_fields": [
+    {"name": "anonymous_case_id", "type": "string"},
+    {"name": "time_utc", "type": "datetime_utc"},
+    {"name": "temperature_observed_c", "type": "float"},
+    {"name": "dewpoint_observed_c", "type": "float"},
+    {"name": "u10_observed_ms", "type": "float"},
+    {"name": "v10_observed_ms", "type": "float"},
+    {"name": "wind_speed_observed_ms", "type": "float"}
+  ],
+  "allowed_public_outputs": [
+    "aggregate_metric_name",
+    "sample_count",
+    "background_metric",
+    "corrected_metric"
+  ]
+}
+

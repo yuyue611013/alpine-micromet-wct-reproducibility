@@ -1,0 +1,2 @@
+endpoint,n,background_rmse,corrected_rmse,background_mae,corrected_mae,background_bias,corrected_bias,delta_rmse,delta_rmse_ci_low,delta_rmse_ci_high,delta_mae,piecewise_sensitivity_delta_rmse
+primary_standard_Celsius_WCT,67905,6.783081044812517,6.190070766435607,5.534286875339408,4.758274169181435,-0.09198111528975919,3.8629692770020045,0.5930102783769104,-0.40667759544876486,1.6398053961297259,0.7760127061579727,0.865740364765049

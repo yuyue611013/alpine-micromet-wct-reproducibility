@@ -1,0 +1,117 @@
+{
+  "Dew_point_constrained": {
+    "metrics": {
+      "bias_shift": {
+        "ci_high": 2.819435458380374,
+        "ci_low": 2.055336327214565,
+        "estimate": 2.436577395053958
+      },
+      "delta_mae": {
+        "ci_high": 1.8610161902097644,
+        "ci_low": 1.1418342158827126,
+        "estimate": 1.5021545146685238
+      },
+      "delta_rmse": {
+        "ci_high": 2.0066029975188613,
+        "ci_low": 1.0697329513978302,
+        "estimate": 1.5165310927198221
+      }
+    },
+    "paired_station_draws": true,
+    "replicates": 2000,
+    "seed": 20260825,
+    "station_clusters": 74
+  },
+  "Temperature": {
+    "metrics": {
+      "bias_shift": {
+        "ci_high": 4.152076058507824,
+        "ci_low": 3.243271478283912,
+        "estimate": 3.6777133391685295
+      },
+      "delta_mae": {
+        "ci_high": 2.4639479821476598,
+        "ci_low": 1.3670205242701836,
+        "estimate": 1.904322022066419
+      },
+      "delta_rmse": {
+        "ci_high": 2.6987784946865507,
+        "ci_low": 1.3396347924480148,
+        "estimate": 2.004099359087946
+      }
+    },
+    "paired_station_draws": true,
+    "replicates": 2000,
+    "seed": 20260825,
+    "station_clusters": 74
+  },
+  "U10": {
+    "metrics": {
+      "bias_shift": {
+        "ci_high": 0.0841250012977326,
+        "ci_low": 0.01019423469521819,
+        "estimate": 0.048088013076701186
+      },
+      "delta_mae": {
+        "ci_high": 0.028695955092146452,
+        "ci_low": -0.028431209850504572,
+        "estimate": 0.0037003467403748935
+      },
+      "delta_rmse": {
+        "ci_high": 0.035061337374037244,
+        "ci_low": -0.07143254130832748,
+        "estimate": -0.009947287097909596
+      }
+    },
+    "paired_station_draws": true,
+    "replicates": 2000,
+    "seed": 20260825,
+    "station_clusters": 74
+  },
+  "V10": {
+    "metrics": {
+      "bias_shift": {
+        "ci_high": 0.168559910658038,
+        "ci_low": -0.020843235531737333,
+        "estimate": 0.06300296656565298
+      },
+      "delta_mae": {
+        "ci_high": 0.0937070515963309,
+        "ci_low": -0.055184697102532494,
+        "estimate": 0.02221060556828003
+      },
+      "delta_rmse": {
+        "ci_high": 0.1944408652571306,
+        "ci_low": -0.08554857676556213,
+        "estimate": 0.06461528697412677
+      }
+    },
+    "paired_station_draws": true,
+    "replicates": 2000,
+    "seed": 20260825,
+    "station_clusters": 74
+  },
+  "Wind_speed": {
+    "metrics": {
+      "bias_shift": {
+        "ci_high": 0.3221529829883001,
+        "ci_low": -0.0036295053937790223,
+        "estimate": 0.14595799350892547
+      },
+      "delta_mae": {
+        "ci_high": 0.16975389503339353,
+        "ci_low": -0.01747750838421024,
+        "estimate": 0.07012024129759875
+      },
+      "delta_rmse": {
+        "ci_high": 0.38709730130834796,
+        "ci_low": 0.06464713115497014,
+        "estimate": 0.22871370816673098
+      }
+    },
+    "paired_station_draws": true,
+    "replicates": 2000,
+    "seed": 20260825,
+    "station_clusters": 74
+  }
+}

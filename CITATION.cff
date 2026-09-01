@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+# GitHub repository URL: PENDING_CREATION. Add `repository-code` only after a real URL exists.
+# Zenodo DOI: PENDING_CREATION. Add `doi` only after registration.
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Reproducibility code for Limits to translating environmental data into exposure metrics"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Yu
+    given-names: Yue
+  - family-names: Papamichalopoulos
+    given-names: Christopher
+  - family-names: Huang
+    given-names: Kaiyun
+  - family-names: Verdoukas
+    given-names: Panagiotis
+  - family-names: Pitsiladis
+    given-names: Antonios
+  - family-names: Massazza
+    given-names: Giuseppe
+  - family-names: Pigozzi
+    given-names: Fabio
+  - family-names: Pitsiladis
+    given-names: Yannis P.
+preferred-citation:
+  type: article
+  title: "Limits to translating environmental data into exposure metrics"
+  authors:
+    - family-names: Yu
+      given-names: Yue
+    - family-names: Papamichalopoulos
+      given-names: Christopher
+    - family-names: Huang
+      given-names: Kaiyun
+    - family-names: Verdoukas
+      given-names: Panagiotis
+    - family-names: Pitsiladis
+      given-names: Antonios
+    - family-names: Massazza
+      given-names: Giuseppe
+    - family-names: Pigozzi
+      given-names: Fabio
+    - family-names: Pitsiladis
+      given-names: Yannis P.

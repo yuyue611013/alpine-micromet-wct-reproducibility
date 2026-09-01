@@ -1,0 +1,27 @@
+{
+  "cohort": "observed_temperature_le_0C",
+  "endpoint": "PRIMARY_STANDARD_CELSIUS_WCT",
+  "metrics": {
+    "background": {
+      "bias": -0.09198111528975919,
+      "mae": 5.534286875339408,
+      "n": 67905,
+      "r2": -1.0523582297975604,
+      "rmse": 6.783081044812517
+    },
+    "bias_shift_corrected_minus_bg": 3.9549503922917637,
+    "corrected": {
+      "bias": 3.8629692770020045,
+      "mae": 4.758274169181435,
+      "n": 67905,
+      "r2": -0.7091901567395942,
+      "rmse": 6.190070766435607
+    },
+    "delta_mae_bg_minus_corrected": 0.7760127061579727,
+    "delta_rmse_bg_minus_corrected": 0.5930102783769104,
+    "n": 67905
+  },
+  "numerical_floor_ms": 0.1,
+  "wind_conversion": "m_s-1_to_km_h-1",
+  "wind_height_adjustment": false
+}

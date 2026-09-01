@@ -1,0 +1,23 @@
+{
+  "endpoint": "SUPPLEMENTARY_LOW_WIND_PIECEWISE_SENSITIVITY_NOT_PRIMARY",
+  "metrics": {
+    "background": {
+      "bias": -0.44029626760552915,
+      "mae": 5.218006843700137,
+      "n": 67905,
+      "r2": -0.9941708336386001,
+      "rmse": 6.3968587227285
+    },
+    "bias_shift_corrected_minus_bg": 3.6282649088406935,
+    "corrected": {
+      "bias": 3.187968641235164,
+      "mae": 4.141925210116963,
+      "n": 67905,
+      "r2": -0.49092138899766957,
+      "rmse": 5.531118357963451
+    },
+    "delta_mae_bg_minus_corrected": 1.0760816335831747,
+    "delta_rmse_bg_minus_corrected": 0.865740364765049,
+    "n": 67905
+  }
+}

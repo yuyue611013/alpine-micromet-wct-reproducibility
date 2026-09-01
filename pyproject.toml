@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wce-microclimate-repro"
+version = "1.0.0"
+description = "Public-safe reproduction code for the WCE microclimate-to-exposure analysis"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8,<4", "Pillow>=10,<13"]
+full = [
+  "pyarrow>=18,<24",
+  "lightgbm>=4.3,<5",
+  "xarray>=2024.9",
+  "netCDF4>=1.7,<2",
+  "pyproj>=3.6,<4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

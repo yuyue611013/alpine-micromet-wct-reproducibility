@@ -1,0 +1,22 @@
+{
+  "anonymous_site_count": 11,
+  "background_year": 2025,
+  "calendar_alignment": "year changed by pandas DateOffset(years=1); month/day/hour preserved",
+  "design_label": "CALENDAR_ALIGNED_CROSS_YEAR_OPERATIONAL_STRESS_TEST",
+  "elapsed_seconds": 3.543928861618042,
+  "leap_day_handling": "pandas DateOffset semantics; February 2025 contains no leap day",
+  "matched_rows": 1430,
+  "observation_year": 2026,
+  "production_model_hashes": {
+    "dewpoint": "aa8322ff9c83723e64cdf0355cc9f51cc0a33e5d2d5822bf3071232a94ecdb5d",
+    "ralong": "532cde8586d2e270c242ce61d1fbb4c9ff995279eb0991aad587e4de0ee5f10e",
+    "rcross": "df1600a3e6372b2fc4def4d80956d3fcb00ebf9ecb0871b98c93ee56fadf8c71",
+    "temperature": "967a05174c697a93f54e653cf03bfcb562b41b4baefd2a5aa69b35316c71b675"
+  },
+  "public_output_contains_row_level_data": false,
+  "restricted_row_output": "processed/wce_scientific_correction_v1/restricted/calendar_aligned_cross_year_rows_v1.parquet",
+  "same_year_validation": false,
+  "source_sha256": "7c2a21ebebb518b4ba0e041358f70c4b5f33e6c3602d2c1e8a352d9e89b4e0f1",
+  "status": "PASS",
+  "timezone": "UTC exact-hour merge"
+}

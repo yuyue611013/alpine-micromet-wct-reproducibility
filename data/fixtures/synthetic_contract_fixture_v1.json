@@ -1,0 +1,9 @@
+{
+  "description": "Non-scientific miniature fixture; contains no real station or observation data.",
+  "fold_station_counts": [15, 15, 15, 15, 14],
+  "mismatch_station_count": 17,
+  "ssrd_raw_units": "J m**-2",
+  "ssrd_raw_values": [0.0, 3600.0, 7200.0],
+  "ssrd_expected_wm2": [0.0, 1.0, 2.0]
+}
+

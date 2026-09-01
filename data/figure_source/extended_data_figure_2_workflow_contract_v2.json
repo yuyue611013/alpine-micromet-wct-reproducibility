@@ -1,0 +1,11 @@
+{
+  "direct_wct": "existing OOF benchmark retained; comparison is between complete pathways with different backgrounds",
+  "external": "CALENDAR_ALIGNED_CROSS_YEAR_OPERATIONAL_STRESS_TEST; aggregate output only",
+  "ssrd": "training-consistent W m-2 before feature generation",
+  "status": "PUBLIC_SAFE_METHOD_SCHEMATIC",
+  "td_constraint": "constrained Td = min(unconstrained Td, corrected T)",
+  "temperature_dewpoint": "T and Td residual correction; 17 elevation-mismatch stations excluded from training but retained in assigned outer prediction folds",
+  "training": "strict station-grouped five-fold outer OOF with nested station-grouped inner iteration selection",
+  "wct": "primary standard Celsius WCT at observed T <= 0 C; 0.1 m s-1 numerical floor; no height adjustment",
+  "wind": "Ralong/Rcross residual models; canonical DEF1 rotation; U/V reconstruction; wind speed from U/V"
+}

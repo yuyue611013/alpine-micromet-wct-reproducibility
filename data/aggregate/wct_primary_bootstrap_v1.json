@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "bias_shift": {
+      "ci_high": 5.156603085682329,
+      "ci_low": 2.834626498444081,
+      "estimate": 3.9549503922917637
+    },
+    "delta_mae": {
+      "ci_high": 1.5759113450413391,
+      "ci_low": -0.06232624894886176,
+      "estimate": 0.7760127061579727
+    },
+    "delta_rmse": {
+      "ci_high": 1.6398053961297259,
+      "ci_low": -0.40667759544876486,
+      "estimate": 0.5930102783769104
+    }
+  },
+  "paired_station_draws": true,
+  "replicates": 2000,
+  "seed": 20260825,
+  "station_clusters": 74
+}

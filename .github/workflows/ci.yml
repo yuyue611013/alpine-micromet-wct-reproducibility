@@ -1,0 +1,25 @@
+name: public-reproducibility
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e '.[plot]'
+      - run: python -B workflows/validate_installation.py
+      - run: python -B workflows/reproduce_public_results.py --output-root reproduced_outputs
+      - run: python -B -m unittest discover -s tests -v
+      - name: Security scan of publishable repository tree
+        run: |
+          SCAN_ROOT="$(mktemp -d)"
+          git archive HEAD | tar -x -C "$SCAN_ROOT"
+          python -B tools/security_scan.py --root "$SCAN_ROOT"
+      - run: python -B tools/verify_reference_outputs.py
+      - run: python -B tools/clean_room_test.py --repository-root .

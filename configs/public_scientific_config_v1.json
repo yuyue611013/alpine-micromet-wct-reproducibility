@@ -1,0 +1,50 @@
+{
+  "schema_version": "wce_public_scientific_config_v1",
+  "scientific_version": "WCE_SCIENTIFIC_CORRECTION_V1",
+  "training_seed": 20260127,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260825,
+    "cluster": "station"
+  },
+  "ssrd": {
+    "accepted_raw_units": ["J m**-2", "J m-2"],
+    "conversion_divisor": 3600.0,
+    "output_units": "W m-2",
+    "unknown_units": "STOP"
+  },
+  "cross_validation": {
+    "outer_folds": [0, 1, 2, 3, 4],
+    "inner_validation": "each_remaining_original_fold",
+    "selected_round_rule": "floor((sorted_b2+sorted_b3)/2+0.5)",
+    "final_refit_early_stopping": false
+  },
+  "wct": {
+    "cohort": "observed_temperature_le_0C",
+    "wind_conversion": "m_s-1_to_km_h-1",
+    "numerical_floor_ms": 0.1,
+    "wind_height_adjustment": false
+  },
+  "expected_rounded_values": {
+    "component_rmse": {
+      "Temperature": [5.333, 3.329],
+      "Dew_point_constrained": [4.629, 3.112],
+      "U10": [1.843, 1.853],
+      "V10": [1.935, 1.871],
+      "Wind_speed": [2.248, 2.019]
+    },
+    "primary_wct_rmse": [6.783, 6.190],
+    "primary_wct_bias": [-0.092, 3.863],
+    "external_rmse": {
+      "Temperature": [6.638, 3.887],
+      "Dew_point_constrained": [7.080, 5.431],
+      "Wind_speed": [1.010, 1.749]
+    }
+  },
+  "public_inputs": {
+    "aggregate_root": "data/aggregate",
+    "figure_source_root": "data/figure_source",
+    "reference_root": "reference_outputs"
+  }
+}
+

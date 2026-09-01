@@ -1,0 +1,50 @@
+{
+  "actual_full_precision": {
+    "component_rmse": {
+      "Dew_point_constrained": [
+        4.6285555175781825,
+        3.1120244248583604
+      ],
+      "Temperature": [
+        5.333413215074663,
+        3.329313855986717
+      ],
+      "U10": [
+        1.8434741229271985,
+        1.853421410025108
+      ],
+      "V10": [
+        1.9353641485360789,
+        1.870748861561952
+      ],
+      "Wind_speed": [
+        2.247993421248901,
+        2.01927971308217
+      ]
+    },
+    "external_rmse": {
+      "Dew_point_constrained": [
+        7.0804317069435685,
+        5.430533213062218
+      ],
+      "Temperature": [
+        6.638217962029429,
+        3.8870070044078937
+      ],
+      "Wind_speed": [
+        1.0097795021711078,
+        1.7493140386595234
+      ]
+    },
+    "primary_wct_bias": [
+      -0.09198111528975919,
+      3.8629692770020045
+    ],
+    "primary_wct_rmse": [
+      6.783081044812517,
+      6.190070766435607
+    ]
+  },
+  "schema_version": "wce_public_numeric_reference_v1",
+  "source": "repository_internal_public_aggregate_files"
+}

@@ -1,0 +1,68 @@
+{
+  "manifest_version": "wce_public_reproducibility_manifest_v1_3",
+  "scientific_version": "WCE_SCIENTIFIC_CORRECTION_V1",
+  "repository_status": "AUTHOR_REVIEW_CANDIDATE",
+  "default_scope": "PUBLIC_RESULT_REPRODUCTION",
+  "advanced_scope": "FULL_PIPELINE_FROM_AUTHORIZED_PREPARED_INPUTS",
+  "external_scope": "SCHEMA_AND_AGGREGATE_RESULTS_ONLY",
+  "entrypoints": {
+    "installation_validation": "workflows/validate_installation.py",
+    "public_reproduction": "workflows/reproduce_public_results.py",
+    "full_pipeline": "workflows/run_full_pipeline.py"
+  },
+  "full_pipeline_guards": {
+    "execute_flag_required": true,
+    "config_required": true,
+    "input_root_required": true,
+    "output_root_required": true,
+    "network_downloads": false,
+    "restricted_external_endpoint": false,
+    "complete_alpine_grid": false,
+    "direct_wct_retraining": false,
+    "non_clobber": true
+  },
+  "scientific_contract": {
+    "ssrd": "ERA5 hourly accumulated SSRD J m-2 divided by 3600 before derived features",
+    "outer_cv": "strict five-fold station-grouped OOF",
+    "inner_cv": "four remaining original station folds",
+    "selected_rounds": "floor((sorted_b2 + sorted_b3) / 2 + 0.5)",
+    "outer_refit": "fixed rounds, no validation set, no early stopping",
+    "station_prediction": "four-cell grid stencil with bilinear interpolation",
+    "dewpoint": "same-fold and same-key constraint against temperature",
+    "wind": "background-aligned DEF1 Ralong/Rcross rotation and vector magnitude",
+    "bootstrap": "paired station-cluster, 2000 replicates, seed 20260825",
+    "training_seed": 20260127,
+    "primary_wct_cohort": "observed temperature <= 0 C",
+    "direct_wct": "existing OOF input only; never retrained",
+    "external_design": "calendar-aligned cross-year operational stress test"
+  },
+  "public_data_policy": {
+    "aggregate_only": true,
+    "station_hour_rows": false,
+    "venue_hour_rows": false,
+    "station_or_venue_identifiers": false,
+    "coordinates": false,
+    "models": false,
+    "parquet": false,
+    "netcdf": false,
+    "complete_grids": false,
+    "supplementary_external_timeseries": false
+  },
+  "reference_verification": {
+    "rounded_precision": 3,
+    "status": "PASS",
+    "reference": "reference_outputs/metrics/public_numeric_reference_v1.json"
+  },
+  "figure_mapping": "PASS_FINAL_5_MAIN_3_SUPPLEMENTARY",
+  "main_figure_count": 5,
+  "supplementary_figure_count": 3,
+  "frozen_external_timeseries_figure": "SUPPLEMENTARY_FIGURE_3_NOT_INCLUDED",
+  "code_license": "MIT",
+  "aggregate_data_license": "CC_BY_4_0_SCOPED",
+  "copyright_holder": "Yu Yue, Yannis P. Pitsiladis, and contributors",
+  "license_status": "FINALIZED",
+  "github_repository_url": "PENDING_CREATION",
+  "zenodo_doi": "PENDING_CREATION",
+  "private_github_staging_ready": true,
+  "public_release_ready": "YES_PENDING_REPOSITORY_URL_AND_DOI"
+}

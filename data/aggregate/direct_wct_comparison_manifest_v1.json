@@ -1,0 +1,19 @@
+{
+  "all_stations": {
+    "component_and_direct_background_numerically_identical": false,
+    "fair_interpretation": "parallel complete pathways; not endpoint-only unless backgrounds coincide",
+    "matched_rows": 67905
+  },
+  "background_representation": {
+    "component": "four-cell ERA5-to-1km plus station bilinear under corrected SSRD",
+    "direct": "existing direct-WCT station-table background; retained as its own pathway"
+  },
+  "cohort": "exact matched primary WCT keys",
+  "direct_wct_retrained": false,
+  "excluding_mismatch": {
+    "component_and_direct_background_numerically_identical": false,
+    "fair_interpretation": "parallel complete pathways; not endpoint-only unless backgrounds coincide",
+    "matched_rows": 45064
+  },
+  "fold_compatibility": "PASS_SAME"
+}

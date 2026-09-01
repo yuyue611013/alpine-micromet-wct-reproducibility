@@ -1,0 +1,42 @@
+{
+  "schema_version": "wce_full_pipeline_authorized_prepared_inputs_v1",
+  "scope": "FULL_PIPELINE_FROM_AUTHORIZED_PREPARED_INPUTS",
+  "network_access": false,
+  "download_data": false,
+  "external_evaluation": false,
+  "generate_full_grid": false,
+  "direct_wct_retraining": false,
+  "threads": 1,
+  "training_seed": 20260127,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260825,
+  "locked_feature_config": "locked_feature_config_v1.json",
+  "inputs": {
+    "input_contract": "prepared/input_contract.json",
+    "temperature_training_table": "prepared/temperature_training.parquet",
+    "dewpoint_training_table": "prepared/dewpoint_training.parquet",
+    "wind_training_table": "prepared/wind_training.parquet",
+    "temperature_cell_features": "prepared/temperature_four_cell_features.parquet",
+    "dewpoint_cell_features": "prepared/dewpoint_four_cell_features.parquet",
+    "wind_cell_features": "prepared/wind_four_cell_features.parquet",
+    "station_observations": "prepared/station_observations.parquet",
+    "station_fold_map": "prepared/station_fold_map.csv",
+    "elevation_mismatch_map": "prepared/elevation_mismatch_map.csv",
+    "station_metadata": "prepared/station_metadata.csv",
+    "frozen_direct_wct_predictions": "prepared/frozen_direct_wct_predictions.parquet"
+  },
+  "targets": {
+    "temperature": {"target": "T_resid_C", "training_input": "temperature_training_table", "cell_input": "temperature_cell_features", "background": "T_background", "features": [], "exclude_mismatch_from_training": true},
+    "dewpoint": {"target": "Td_resid_C", "training_input": "dewpoint_training_table", "cell_input": "dewpoint_cell_features", "background": "Td_background", "features": [], "exclude_mismatch_from_training": true},
+    "ralong": {"target": "R_along_resid_ms", "training_input": "wind_training_table", "cell_input": "wind_cell_features", "features": [], "exclude_mismatch_from_training": false},
+    "rcross": {"target": "R_cross_resid_ms", "training_input": "wind_training_table", "cell_input": "wind_cell_features", "features": [], "exclude_mismatch_from_training": false}
+  },
+  "lightgbm_params": {},
+  "max_inner_rounds": 800,
+  "early_stopping_rounds": 100,
+  "required_station_count": 74,
+  "required_fold_station_counts": [15, 15, 15, 15, 14],
+  "required_temperature_keys": 210307,
+  "required_dewpoint_keys": 210307,
+  "required_wind_keys": 210263
+}

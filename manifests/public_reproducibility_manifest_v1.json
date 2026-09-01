@@ -61,8 +61,8 @@
   "aggregate_data_license": "CC_BY_4_0_SCOPED",
   "copyright_holder": "Yu Yue, Yannis P. Pitsiladis, and contributors",
   "license_status": "FINALIZED",
-  "github_repository_url": "PENDING_CREATION",
+  "github_repository_url": "https://github.com/yuyue611013/alpine-micromet-wct-reproducibility",
   "zenodo_doi": "PENDING_CREATION",
   "private_github_staging_ready": true,
-  "public_release_ready": "YES_PENDING_REPOSITORY_URL_AND_DOI"
+  "public_release_ready": "YES_PENDING_PUBLIC_RELEASE_AND_DOI"
 }

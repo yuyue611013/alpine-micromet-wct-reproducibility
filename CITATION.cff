@@ -1,5 +1,6 @@
 cff-version: 1.2.0
-# GitHub repository URL: PENDING_CREATION. Add `repository-code` only after a real URL exists.
+# GitHub repository URL: https://github.com/yuyue611013/alpine-micromet-wct-reproducibility
+repository-code: "https://github.com/yuyue611013/alpine-micromet-wct-reproducibility"
 # Zenodo DOI: PENDING_CREATION. Add `doi` only after registration.
 message: "If you use this code, please cite the accompanying manuscript."
 title: "Reproducibility code for Limits to translating environmental data into exposure metrics"
